@@ -1,0 +1,79 @@
+html, body {
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.pageWrap {
+  flex: 1; /*refers to body*/
+  display: flex;
+}
+.leftSide {
+  flex: 1; /*refers to parent*/
+  display: flex; /*refers to self*/
+  flex-direction: column;
+}
+#gallery {
+  flex: 1; /*refers to parent*/
+  background: red;
+  height: 600px;
+}
+#video {
+  flex: 1; /*refers to parent*/
+  background: blue;
+  height: 600px;
+  position: relative;
+}
+#video iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+.rightSide {
+  flex: 1; /*refers to parent*/
+  display: flex; /*refers to self*/
+  flex-direction: column;
+}
+#specs {
+  flex: 1;
+  border: 1px solid black;
+  padding: 5px;
+}
+#carInfo {
+  flex: 2;
+  font-family: Arial;
+  background: #333;
+  width: 100%;
+  margin: 0 auto;
+  padding: 5px;
+}
+.tabs {
+  display: flex;
+}
+.tab {
+  border-color: transparent;
+  font-size: 20px;
+  background: #667;
+  color: white;
+  padding: 10px 20px;
+  transition: 0.2s;
+  outline: none;
+  cursor: pointer;
+}
+.content {
+  font-size: 20px;
+  background: #667;
+  padding: 5px 20px;
+  color: white;
+  display: none;
+}
+
+
+

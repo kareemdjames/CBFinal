@@ -1,0 +1,153 @@
+html, body {
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+/*Header CSS*/
+.headWrap {
+  flex: 1; /*relates to the body*/
+  min-height: 100px;
+}
+/*SlideShow CSS*/
+.sSWrap {
+  flex: 1; /*relates to the body*/
+  min-height: 700px;
+}
+.sS {
+  height: 700px;
+  width: 100%;
+  margin: 5px;
+  position: relative;
+  background-size: cover;
+}
+.sS img {
+  position: absolute;
+  height: 700px;
+}
+.content {
+  flex: 2; /*relates to the body*/
+}
+.gWrap {
+  display: flex; /*relates to its class*/
+  flex-wrap: wrap;
+/*  width: 700px;
+*/}
+.gWrap div {
+  flex: 1; /*relates to all the divs in the class*/
+  border: 1px solid black;
+  margin: 5px;
+}
+.gBlockOne {
+  display: flex; /*relates to its self*/
+  flex-direction: column;
+}
+#tOne {
+  flex: 1; /*relates to parent*/
+  display: flex /*relates to self*/
+}
+#bOne {
+  flex: 1; /*relates to parent*/
+}
+#one #two {
+  flex: 1; /*relates to parent*/
+}
+#one {
+  background: red;
+  height: 200px;
+  min-width: 200px;
+}
+#two {
+  background: orange;
+  height: 200px;
+  min-width: 200px;
+}
+#three {
+  background: green;
+  height: 200px;
+/*  min-width: 200px;
+*/}
+.gBlockTwo {
+  display: flex; /*relates to self*/
+  flex-direction: column;
+}
+#four {
+  background: blue;
+  min-height: 400px;
+  min-width: 200px;
+}
+#five {
+  background: lime;
+  min-width: 400px;
+  height: 200px;
+}
+#six #seven {
+  flex: 1;
+}
+#six {
+  background: fuchsia;
+  min-width: 300px;
+  height: 200px;
+}
+#seven {
+  background: crimson;
+  min-width: 100px;
+  height: 200px;
+}
+#eight {
+  background: purple;
+  min-width: 600px;
+  height: 200px;
+}
+/*Footer CSS*/
+.footer {
+  flex: 1; /*relates to the body*/
+  min-height: 100px;
+}
+.footWrap {
+  display: flex;
+}
+.footWrap div {
+  flex: 1;
+  border: 1px solid black;
+  margin: 5px;
+}
+.logoWrap {
+  flex:1;
+  max-width: 200px;
+}
+#logo {
+  height: 100px;
+  background: linear-gradient(to right, #1488cc, #2b32b2); 
+}
+.smWrap {
+  flex: 2; /*relates to parent*/
+  display: flex;
+}
+#fb, #tw, #ig, #yt, #gPlus {
+  height: 100px;
+  flex: 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#fb {
+  background-image: url(../imgs/fb.png);
+}
+#tw {
+  background-image: url(../imgs/tw.png);
+}
+#ig {
+  background-image: url(../imgs/ig.png);
+}
+#yt {
+  background-image: url(../imgs/yt.png);
+}
+#gPlus {
+  background-image: url(../imgs/gPlus.png);
+}
+

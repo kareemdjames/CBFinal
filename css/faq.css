@@ -1,0 +1,42 @@
+html, body {
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.faqWrap {
+  flex: 1; /*relates to body*/
+  display: /*flex; relates to self*/
+}
+.lSide {
+  flex: 2; /*relates to parent*/
+  display: flex; /*relates to self*/
+  flex-direction: column;
+}
+.accWrap {
+  flex: 1; /*relates to parent*/
+}
+.rSide {
+  flex: 1; /*relates to parent*/
+  display: flex; /*relates to self*/
+  flex-direction: column;
+}
+.sponWrap {
+  flex: 1; /*relates to parent*/
+  display: flex; /*relates to self*/
+  flex-direction: column; 
+}
+#spon {
+  flex: 1; /*relates to parent*/
+}
+.adWrap {
+  display: flex; /*relates to parent*/
+  display: flex; /*relates to self*/
+  flex-direction: column;
+}
+#ad {
+  flex: 1; /*relates to parent*/
+}

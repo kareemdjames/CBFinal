@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="../css/contact.css">
+  <title>Contact US</title>
+</head>
+<body>
+<!-- This is the map div -->
+  <div class="mapWrap">
+    <div id="map">
+      
+    </div>
+  </div>
+  <div class="contactInfoWrap">
+    <div class="leftSide">
+      <div class="contactInfo">
+        <div id="contact">
+          <h1>Contact Information</h1>
+          <p>Address: Black Truss Motoring<br>
+          864 E. 231st St.<br>
+          Phone: 800-555-5555<br>
+          Email: sales@btm.com
+          </p>
+        </div>
+        <div id="hours">
+          <h1>Business Hours</h1>
+          <table class="hTable">
+    <thead>
+      <tr>
+        <td colspan="2"><strong>Sales Department</strong></td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Mon:</td>
+        <td>10:00am - 6:00pm</td>
+      </tr>
+      <tr>
+        <td>Tue:</td>
+        <td>10:00am - 6:00pm</td>
+      </tr>
+      <tr>
+        <td>Wed:</td>
+        <td>10:00am - 6:00pm</td>
+      </tr>
+      <tr>
+        <td>Thu:</td>
+        <td>10:00am - 6:00pm</td>
+      </tr>
+      <tr>
+        <td>Fri:</td>
+        <td>10:00am - 6:00pm</td>
+      </tr>
+      <tr>
+        <td>Sat:</td>
+        <td>By Appointment Only</td>
+      </tr>
+      <tr>
+        <td>Sun:</td>
+        <td>Closed</td>
+      </tr>
+    </tbody>
+    </table>
+        </div>
+        <div id="ccInfo">
+          
+        </div>
+      </div>
+    </div>
+    <div class="rightSide">
+      <div class="contactUsForm">
+        <div id="form">
+          <h1>Contact Us</h1>
+          <form>
+            First Name:<br>
+            <input type="text" name="firstName"><br>
+            Last Name:<br>
+            <input type="text" name="lastName"><br>
+            Email Address:<br>
+            <input type="email" name="email"><br>
+            Phone Number:<br>
+            <input type="text" name="phoneNumber"><br>
+            Message:<br>
+            <textarea name="message" rows="20" cols="60"></textarea><br>
+            <input type="submit" name="submit">
+          </form>
+          <h3>Please expect a response in 24-48 hrs.</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- js -->
+  <script type="text/javascript">
+    //google maps function
+  function btmMap() {
+    var mapProp = { 
+      center:new google.maps.LatLng(40.890141,-73.855152),
+      zoom: 17,
+    };
+    var map =new google.maps.Map(document.getElementById("map"),mapProp);
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHKysy67fniqtOPr5vyXrOVaWuvUTZZmU&callback=btmMap">
+  </script>
+</body>
+</html>
