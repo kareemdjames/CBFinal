@@ -1,26 +1,39 @@
-html, body {
-  min-height: 100%;
-  padding: 0;
-  margin: 0;
-}
-body {
-  display: flex;
-  flex-direction: column;
+.head {
+  background-image: url(../imgs/speeding.jpeg);
+  background-size: cover;
 }
 .aboutWrap {
   flex: 1; /*relates to body*/
+  margin-top: 75px;
 }
 .profile {
   display: flex; /*relates to self*/
+  min-height: 200px;
+  width: 100%;
 }
-#pImg {
+.pImg {
   flex: 1; /*relates to parent*/
-  min-width: 100px;
+  min-width: 200px;
   height: 300px;
+  padding: 10px;
 }
-
- #pInfo {
+.pImgWrap {
+  height: 100%;
+  background-size: cover;
+  border-radius: 50%;
+}
+#one .pImgWrap {
+  background-image: url(../imgs/s2k.jpg);
+}
+#two .pImgWrap {
+  background-image: url(../imgs/s2k.jpg);
+}
+#three .pImgWrap {
+  background-image: url(../imgs/s2k.jpg);
+}
+ .pInfo {
   flex: 2; /*relates to parent*/
   min-width: 200px;
   height: 300px;
+  padding: 10px;
 }

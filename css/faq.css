@@ -1,23 +1,34 @@
-html, body {
-  min-height: 100%;
-  padding: 0;
-  margin: 0;
-}
-body {
-  display: flex;
-  flex-direction: column;
+.head {
+  background-image: url(../imgs/speedo.jpeg);
 }
 .faqWrap {
   flex: 1; /*relates to body*/
-  display: /*flex; relates to self*/
+  display: flex; /*relates to self*/
+  margin-top: 75px;
 }
 .lSide {
-  flex: 2; /*relates to parent*/
+  flex: 3; /*relates to parent*/
   display: flex; /*relates to self*/
   flex-direction: column;
 }
 .accWrap {
   flex: 1; /*relates to parent*/
+}
+button.acc {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  .accWrap .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
 }
 .rSide {
   flex: 1; /*relates to parent*/
@@ -29,14 +40,46 @@ body {
   display: flex; /*relates to self*/
   flex-direction: column; 
 }
-#spon {
+.sponWrap div {
+  border: 1px solid black;
+}
+.spon {
   flex: 1; /*relates to parent*/
+  min-height: 110px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#sOne{
+  background-image: url(../imgs/nike_logo.jpg);
+}
+#sTwo {
+  background-image: url(../imgs/panera.png);
+  background-size: contain;
+
+}
+#sThree {
+  background-image: url(../imgs/chase.png);
+  background-position: 
+}
+#sFour {
+  background-image: url(../imgs/skunk2.jpeg);
 }
 .adWrap {
-  display: flex; /*relates to parent*/
+  flex: 1; /*relates to parent*/
   display: flex; /*relates to self*/
   flex-direction: column;
 }
-#ad {
+.adWrap div {
+  border: 1px solid black;
+}
+.ad {
   flex: 1; /*relates to parent*/
+  min-height: 100px;
+  width: 100%;
+  background-image: url(../imgs/yourad.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }

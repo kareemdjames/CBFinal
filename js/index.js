@@ -29,16 +29,7 @@
       }
       document.getElementById(inside).style.display = "block";
   }
-  //google maps function
-  function btmMap() {
-    var mapProp = { 
-      center: new google.maps.LatLng(40.890141,-73.855152),
-      zoom: 17,
-    };
-    var map = new googe.maps.Map(document.getElementById("map"),mapProp);
-  }
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHKysy67fniqtOPr5vyXrOVaWuvUTZZmU&callback=myMap">
-
+  
 
 
 

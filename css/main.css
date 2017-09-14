@@ -1,0 +1,101 @@
+/*Body CSS*/
+html, body {
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+/*Header CSS*/
+.head {
+  flex: 1; /*relates to body*/
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+.headWrap {
+  min-height: 100px;
+  opacity: .60;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  padding: 0;
+}
+header nav {
+  min-height: 100px;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+nav li {
+  float: left;
+}
+nav li a {
+  display: block;
+  color:white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+nav li a:hover {
+  background-color: #2A52BE;
+}
+/*Footer CSS*/
+.footer {
+  flex: 1; /*relates to the body*/
+  min-height: 100px;
+}
+.footWrap {
+  display: flex;
+}
+.footWrap div {
+  flex: 1;
+  border: 1px solid black;
+  margin: 5px;
+}
+.logoWrap {
+  flex:1;
+  max-width: 200px;
+}
+#logo {
+  height: 100px;
+  background: linear-gradient(to right, #1488cc, #2b32b2); 
+}
+.smWrap {
+  flex: 2; /*relates to parent*/
+  display: flex;
+}
+#fb, #tw, #ig, #yt, #gPlus {
+  height: 100px;
+  flex: 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#fb {
+  background-image: url(../imgs/fb.png);
+}
+#tw {
+  background-image: url(../imgs/tw.png);
+}
+#ig {
+  background-image: url(../imgs/ig.png);
+}
+#yt {
+  background-image: url(../imgs/yt.png);
+}
+#gPlus {
+  background-image: url(../imgs/gPlus.png);
+}

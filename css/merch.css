@@ -1,51 +1,67 @@
-html, body {
-  min-height: 100%;
-  padding: 0;
-  margin: 0;
-}
-body {
-  display: flex;
-  flex-direction: column;
+.head {
+  background-image: url(../imgs/japan.jpeg);
+  background-size: cover;
+  background-position: 0 50%;
 }
 .top {
   flex: 1; /*relates to body*/
   height: 400px;
-  width: 100%;
+  margin-top: 75px;
 }
 .infoWrap {
   display: flex; /*relates to self*/
   height: 400px;
-  background: yellow;
 }
 .infoWrap div {
   border: 1px solid black;
 }
 #lSide, #rSide {
   flex: 1; /*relates to parent*/
-  width: 400px;
+  padding: 0 10px;
 }
 #lSide {
-
-}
-#rSide {
-
+  background-image: url(../imgs/r32.jpg);
+  background-size: cover;
 }
 .bottom {
   flex: 1; /*relates to body*/
-  height: 600px;
-  width: 100%;
-}
-.merchCards {
-  display: flex;
-  align-items: center;
-  height: 600px;
-
+  /*width: 100%;*/
 }
 .merchCards div {
+  margin: 10px;
   border: 1px solid black;
 }
-#cOne, #cTwo, #cThree, #cFour {
-  flex: 1; /*relates to parent*/
-  height: 400px;
-  min-width: 150px;
+.merchWrap {
+  display: flex; /*relates to self*/
+  flex-direction: column;
 }
+.merchWrap img {
+  height: auto;
+  width: 100%;
+}
+.mwT {
+  flex: 1; /*relates to parent*/
+  display: flex; /*relates to self*/
+}
+.mwB {
+ flex: 1; /*relates to parent*/
+ display: flex; /*relates to self*/
+}
+.mImg {
+  display: flex; /*relates to self*/
+  flex-direction: column;
+  flex: 1;
+}
+#iWrap {
+  flex: 2; /*relates to parent*/
+}
+.desc {
+  padding: 15px;
+  text-align: center;
+  flex: 1; /*relates to parent*/
+}
+#mOne, #mTwo, #mThree, #mFour {
+  /*flex: 1;*/ /*relates to parent*/
+  min-height: auto;
+}
+

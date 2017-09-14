@@ -12,6 +12,29 @@ body {
   flex: 1; /*relates to the body*/
   min-height: 100px;
 }
+header nav {
+  min-height: 100px;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+nav li {
+  float: left;
+}
+nav li a {
+  display: block;
+  color:white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+nav li a:hover {
+  background-color: #2A52BE;
+}
 /*SlideShow CSS*/
 .sSWrap {
   flex: 1; /*relates to the body*/
@@ -19,7 +42,7 @@ body {
 }
 .sS {
   height: 700px;
-  width: 100%;
+  width: 99%;
   margin: 5px;
   position: relative;
   background-size: cover;
@@ -68,8 +91,8 @@ body {
 #three {
   background: green;
   height: 200px;
-/*  min-width: 200px;
-*/}
+  display: flex;
+}
 .gBlockTwo {
   display: flex; /*relates to self*/
   flex-direction: column;
@@ -98,9 +121,13 @@ body {
   height: 200px;
 }
 #eight {
-  background: purple;
   min-width: 600px;
   height: 200px;
+  display: flex; /*relates to self*/
+}
+.sold {
+  flex: 1;
+  min-width: 100px;
 }
 /*Footer CSS*/
 .footer {
