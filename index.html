@@ -2,11 +2,14 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
   <title>Homepage</title>
 </head>
 <body>
-<!-- header -->
-  <div class="headWrap">
+<!--   Slide Show-->  
+  <div class="sSWrap">
+    <!-- Header -->
+    <div class="headWrap">
     <header>
       <nav>
         <ul>
@@ -21,14 +24,13 @@
       </nav>
     </header>
   </div>
-<!--   Slide Show-->  
-  <div class="sSWrap">
+    <!-- SS Start -->
     <div class="sS">
       <img class="miSlides" src="imgs/supra.jpeg" style="width: 100%">
-      <img class="miSlides" src="imgs/si400.jpg" style="width: 100%">
-      <img class="miSlides" src="imgs/skyline400.jpeg" style="width: 100%">
-      <img class="miSlides" src="imgs/s2k400.jpg" style="width: 100%">
-      <img class="miSlides" src="imgs/rears400.jpg" style="width: 100%">
+      <img class="miSlides" src="imgs/si.jpg" style="width: 100%">
+      <img class="miSlides" src="imgs/skyline.jpeg" style="width: 100%">
+      <img class="miSlides" src="imgs/s2k.jpg" style="width: 100%">
+      <img class="miSlides" src="imgs/rears.jpg" style="width: 100%">
       <button class="lBtn" onclick="plusDivs(-1)">&#10094;</button>
       <button class="rBtn" onclick="plusDivs(1)">&#10095;</button>
     </div>
@@ -37,25 +39,79 @@
   <div class="content">
     <div class="gWrap">
       <div class="gBlockOne"> <!-- horizontal -->
-          <div id="tOne">
-            <div id="one"></div>
-            <div id="two"></div>
+        <div id="tOne">
+          <div id="one">
+            <div class="flip">
+              <div class="front">
+                <img src="imgs/frontpage/ae86.jpeg">
+              </div>
+              <div class="back"><h1>Don't</h1></div>
+            </div>
           </div>
+            
+          <div id="two">
+            <div class="flip">
+              <div class="front">
+                <img src="imgs/frontpage/datsun.jpeg">
+              </div>
+              <div class="back"><h1>Wait</h1></div>
+            </div>
+          </div>
+        </div>
           <div id="bOne">
-            <div id="three"></div>
+            <div id="three">
+              <div class="flip">
+              <div class="frontX">
+                <img src="imgs/frontpage/gc8.jpg">
+              </div>
+              <div class="backX"><h1>Live</h1></div>
+            </div>
+            </div>
           </div>
       </div>
       <div class="gBlockTwo"> <!-- vertical -->
-        <div id="four"></div>
+        <div id="four">
+            <div class="flip">
+              <div class="front">
+                <img src="imgs/frontpage/mr2.jpeg">
+              </div>
+              <div class="back">
+                <img src="imgs/frontpage/logo.png">
+              </div>
+            </div>
+        </div>
       </div>
       <div class="gBlockOne">
         <div id="tOne">
-          <div id="six"></div>
-          <div id="seven"></div>
+          <div id="six">
+            <div class="flip">
+              <div class="front">
+                <img src="imgs/frontpage/r33.jpeg">
+              </div>
+              <div class="back"><h1>You</h1></div>
+            </div>
+          </div>
+          
+          <div id="seven">
+            <div class="flip">
+              <div class="front">
+                <img src="imgs/frontpage/s13.jpg">
+              </div>
+              <div class="back"><h1>Only</h1></div>
+            </div>
+          </div>
         </div>
+
         <div id="bOne">
-          <div id="five"></div>
-        </div>
+          <div id="five">
+            <div class="flip">
+              <div class="frontX">
+                <img src="imgs/frontpage/sunny.jpg">
+              </div>
+              <div class="backX"><h1>Once</h1></div>
+            </div>
+          </div>
+          </div>
     </div>
       <div id="bThree">
         <div id="eight">
@@ -66,6 +122,7 @@
         </div>
       </div>
   </div>
+</div>
 <!-- Footer -->
   <div class="footer">
     <footer>
@@ -74,15 +131,16 @@
           <div id="logo"></div>
         </div>
         <div class="smWrap">
-          <div id="fb"></div>
-          <div id="tw"></div>
-          <div id="ig"></div>
-          <div id="yt"></div>
-          <div id="gPlus"></div>
+          <div id="fb" value="http://www.facebook.com" onclick="getWeb(this.id);"></div>
+          <div id="tw" value="http://www.twitter.com" onclick="getWeb(this.id);"></div>
+          <div id="ig" value="http://www.instagram.com" onclick="getWeb(this.id);"></div>
+          <div id="yt" value="http://www.youtube.com" onclick="getWeb(this.id);"></div>
+          <div id="gPlus" value="http://plus.google.com" onclick="getWeb(this.id);"></div>
         </div>
       </div>
     </footer>
   </div>
 <script src="js/index.js"></script>
+<script src="js/getweb.js"></script>
 </body>
 </html>

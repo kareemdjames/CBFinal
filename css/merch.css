@@ -13,7 +13,10 @@
   height: 400px;
 }
 .infoWrap div {
-  border: 1px solid black;
+  /*border: 1px solid black;*/
+}
+h1, h2 {
+  color: #3766D2;
 }
 #lSide, #rSide {
   flex: 1; /*relates to parent*/
@@ -22,6 +25,11 @@
 #lSide {
   background-image: url(../imgs/r32.jpg);
   background-size: cover;
+  box-shadow: 10px 10px 5px #888888;
+  margin-left: 10px;
+}
+#rSide {
+  padding: 3%;
 }
 .bottom {
   flex: 1; /*relates to body*/
@@ -29,7 +37,7 @@
 }
 .merchCards div {
   margin: 10px;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
 }
 .merchWrap {
   display: flex; /*relates to self*/
@@ -51,6 +59,9 @@
   display: flex; /*relates to self*/
   flex-direction: column;
   flex: 1;
+  border: 1px solid black;
+  border-radius: 8px;
+  box-shadow: 10px 10px 5px #888888;
 }
 #iWrap {
   flex: 2; /*relates to parent*/

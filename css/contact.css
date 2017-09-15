@@ -3,12 +3,13 @@
   background-size: cover;
   background-position: 0 40%;
 }
+/*Map Div*/
 .mapWrap {
   flex: 2; /*relates to body*/
   height: 550px;
   width: 100%;
-  border: 1px solid black;
   margin-top: 75px;
+  z-index: -1;
 }
 #map {
   margin: 10px;
@@ -16,6 +17,7 @@
   width: 99%;
   overflow-x: none;
 }
+/*Contact Info Left and Right Sides*/
 .contactInfoWrap {
   flex: 1; /*relates to body*/
   display: flex;
@@ -28,9 +30,10 @@
   flex-direction: column;
 }
 .leftSide div {
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   min-height: 200px;
   flex: 1;
+  padding-left: 10px;
 }
 #contact {
   margin: 5px;
@@ -49,9 +52,84 @@
 .rightSide {
   flex: 2; /*relates to parent*/
 }
-.rightSide div {
-  border: 1px solid black;
+h1 {
+  color: #3766D2;
 }
+/*Contact Form*/
 #form {
   margin: 5px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+input[type=text], [type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 16px;
+  resize: none;
+  outline: none;
+}
+input[type=submit] {
+  width: 100%;
+  background-color: #3766D2;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/*Modal*/ 
+.modalBg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.modalContent {
+  position: fixed;
+  width: 800px;
+  height: 500px;
+  border-radius: 8px;
+  background-color: white;
+  left: 50%;
+  margin-left: -400px;
+  top: 50%;
+  margin-top: -250px;
+}
+.modalContent img {
+  height: 200px;
+  width: 200px;
+}
+.closeModal {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+  border: 2px solid black;
+  text-align: center;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+}
+.closeModal p {
+  margin-top: 5px;
+  font-weight: bold;
 }

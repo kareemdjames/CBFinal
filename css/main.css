@@ -16,6 +16,7 @@ body {
   background-size: cover;
   margin: 0;
   padding: 0;
+  box-shadow: 10px 10px 5px #888888;
 }
 .headWrap {
   min-height: 100px;
@@ -49,7 +50,7 @@ nav li a {
   text-decoration: none;
 }
 nav li a:hover {
-  background-color: #2A52BE;
+  background-color: #3766D2;
 }
 /*Footer CSS*/
 .footer {
@@ -58,10 +59,11 @@ nav li a:hover {
 }
 .footWrap {
   display: flex;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
 .footWrap div {
   flex: 1;
-  border: 1px solid black;
   margin: 5px;
 }
 .logoWrap {

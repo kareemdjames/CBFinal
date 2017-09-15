@@ -15,7 +15,7 @@
   flex: 1; /*relates to parent*/
 }
 button.acc {
-    background-color: #eee;
+    background-color: white;
     color: #444;
     cursor: pointer;
     padding: 18px;
@@ -24,24 +24,31 @@ button.acc {
     border: none;
     outline: none;
     transition: 0.4s;
+    font-size: 20px;
+  }
+  button.acc:hover {
+    background-color: #3766D2;
+    color: white;
+  }
+  .panel {
+    font-size: 20px;
   }
   .accWrap .panel {
     padding: 0 18px;
     background-color: white;
     display: none;
-}
+  }
 .rSide {
   flex: 1; /*relates to parent*/
   display: flex; /*relates to self*/
   flex-direction: column;
 }
+h1 {
+}
 .sponWrap {
   flex: 1; /*relates to parent*/
   display: flex; /*relates to self*/
   flex-direction: column; 
-}
-.sponWrap div {
-  border: 1px solid black;
 }
 .spon {
   flex: 1; /*relates to parent*/
@@ -70,9 +77,6 @@ button.acc {
   flex: 1; /*relates to parent*/
   display: flex; /*relates to self*/
   flex-direction: column;
-}
-.adWrap div {
-  border: 1px solid black;
 }
 .ad {
   flex: 1; /*relates to parent*/

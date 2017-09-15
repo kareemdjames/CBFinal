@@ -15,29 +15,6 @@
   position: absolute;
   height: 800px;
 }
-.lBtn, .rBtn {
-    cursor: pointer;
-    position: absolute;
-    top: 300px;
-    height: 70px;
-    width: 70px;
-    padding: 16px;
-    color: white;
-    font-weight: bolder;
-    font-size: 30px;
-    transition: 0.6 ease;
-    border-radius: 50%;
-    background: black;
-    border: none;
-    text-align: center;
-    outline: 0;
-}
-  .lBtn {
-    left: 10px;
-  }
-  .rBtn {
-    right: 10px;
-  }
 .content {
   flex: 2; /*relates to the body*/
 }
@@ -45,55 +22,12 @@
 .gWrap {
   display: flex; /*relates to its class*/
   flex-wrap: wrap;
-}
+/*  width: 700px;
+*/}
 .gWrap div {
   flex: 1; /*relates to all the divs in the class*/
-  /*border: 1px solid black;*/
+  border: 1px solid black;
   margin: 5px;
-}
-/*flip animation*/
-.flip {
-  transition: all 0.6s ease;
-  transform-style: preserve-3d;
-  position: relative;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-.flip img {
-  width: 100%;
-  height: 100%;
-}
-.front, .back, .frontX, .backX {
-  backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  min-width: 100%;
-}
-.front {
-  transform: rotateY(0deg);
-}
-.back {
-  transform: rotateY(180deg);
-  background: #3766D2;
-}
-.back h1 {
-  color: white;
-  text-align: center;
-  line-height: 150px;
-}
-/*Horizontal Flip*/
-.frontX {
-  transform: rotateX(0deg);
-}
-.backX {
-  transform: rotateX(180deg);
-  background: #3766D2;
-  color: white;
-  text-align: center;
-  line-height: 150px;
 }
 .gBlockOne {
   display: flex; /*relates to its self*/
@@ -110,61 +44,72 @@
   flex: 1; /*relates to parent*/
 }
 #one {
+  background: red;
+  height: 200px;
   min-width: 200px;
-  perspective: 1000;
-}
-#one:hover .flip {
-  transform: rotateY(180deg);
 }
 #two {
+  background: orange;
+  height: 200px;
   min-width: 200px;
-  perspective: 1000;
 }
-#two:hover .flip {
-  transform: rotateY(180deg);
-}
-
 #three {
+  background: green;
   height: 200px;
   display: flex;
-}
-#three:hover .flip {
-  transform: rotateX(180deg);
 }
 .gBlockTwo {
   display: flex; /*relates to self*/
   flex-direction: column;
 }
 #four {
+  background: blue;
+  min-height: 400px;
   min-width: 200px;
   perspective: 1000;
 }
- #four:hover .flip {
-  transform: rotateY(360deg);
+#four:hover .flip {
+  transform: rotateY(180deg);
+}
+.front, .back {
+  height: 100%;
+}
+.flip {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.front {
+  transform: rotateY(0deg);
+  background: orange;
+}
+.back {
+  transform: rotateY(180deg);
+  background: blue;
 }
 #five {
+  background: lime;
   min-width: 400px;
   height: 200px;
 }
-#five:hover .flip {
-  transform: rotateX(180deg);
-}
 #six #seven {
-  flex: 1; /*relates to parent*/
+  flex: 1;
 }
 #six {
+  background: fuchsia;
   min-width: 300px;
-  /*height: 200px;*/
-}
-#six:hover .flip {
-  transform: rotateY(180deg);
-}
-#seven {
-  /*min-width: 100px;*/
   height: 200px;
 }
-#seven:hover .flip {
-  transform: rotateY(180deg);
+#seven {
+  background: crimson;
+  min-width: 100px;
+  height: 200px;
 }
 #eight {
   min-width: 600px;
@@ -204,6 +149,7 @@
 }
 .footWrap div {
   flex: 1;
+  border: 1px solid black;
   margin: 5px;
 }
 .logoWrap {
@@ -218,7 +164,7 @@
   flex: 2; /*relates to parent*/
   display: flex;
 }
-/*#fb, #tw, #ig, #yt, #gPlus {
+#fb, #tw, #ig, #yt, #gPlus {
   height: 100px;
   flex: 1;
   background-size: contain;
@@ -240,5 +186,5 @@
 }
 #gPlus {
   background-image: url(../imgs/gPlus.png);
-}*/
+}
 

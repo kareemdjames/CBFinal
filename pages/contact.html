@@ -3,6 +3,7 @@
 <head>
   <link rel="stylesheet" type="text/css" href="../css/main.css">
   <link rel="stylesheet" type="text/css" href="../css/contact.css">
+  <link rel=“stylesheet” href=“path/to/font-awesome/css/font-awesome.min.css”>
   <title>Contact US</title>
 </head>
 <body>
@@ -35,10 +36,11 @@
       <div class="contactInfo">
         <div id="contact">
           <h1>Contact Information</h1>
-          <p>Address: Black Truss Motoring<br>
+          <p><strong>Address:</strong>
+          Black Truss Motoring<br>
           864 E. 231st St.<br>
-          Phone: 800-555-5555<br>
-          Email: sales@btm.com
+          <strong>Phone: </strong> 800-555-5555<br>
+          <strong>Email: </strong>sales@btm.com
           </p>
         </div>
         <div id="hours">
@@ -92,21 +94,33 @@
           <h1>Contact Us</h1>
           <form>
             First Name:<br>
-            <input type="text" name="firstName"><br>
+            <input type="text" name="firstName" placeholder="First Name..."><br>
             Last Name:<br>
-            <input type="text" name="lastName"><br>
+            <input type="text" name="lastName" placeholder="Last Name..."><br>
             Email Address:<br>
-            <input type="email" name="email"><br>
+            <input type="email" name="email" placeholder="name@example.com..."><br>
             Phone Number:<br>
-            <input type="text" name="phoneNumber"><br>
+            <input type="text" name="phoneNumber" placeholder="800-223-9797"><br>
             Message:<br>
-            <textarea name="message" rows="20" cols="60"></textarea><br>
-            <input type="submit" name="submit">
+            <textarea name="message" rows="20" cols="60" placeholder="Type your message here."></textarea><br>
+            <input type="submit" name="submit" onclick="openModal(); return false;">
           </form>
           <h3>Please expect a response in 24-48 hrs.</h3>
         </div>
       </div>
     </div>
+  </div>
+    <!-- Modal -->
+  <div class="modalBg" id="modalBgs">
+    <div class="modalContent">
+      <center>
+        <h1>Thank you for submitting your form</h1><br>
+        <img src="../imgs/smiley-face.png">
+        <h2>We will be in contact shortly!</h2>
+      </center>
+
+      <div class="closeModal" onclick="closeModal()"><p>X</p></div>
+      </div>
   </div>
   <!-- Footer -->
   <div class="footer">
@@ -116,11 +130,11 @@
           <div id="logo"></div>
         </div>
         <div class="smWrap">
-          <div id="fb"></div>
-          <div id="tw"></div>
-          <div id="ig"></div>
-          <div id="yt"></div>
-          <div id="gPlus"></div>
+          <div id="fb" value="http://www.facebook.com" onclick="getWeb(this.id);"></div>
+          <div id="tw" value="http://www.twitter.com" onclick="getWeb(this.id);"></div>
+          <div id="ig" value="http://www.instagram.com" onclick="getWeb(this.id);"></div>
+          <div id="yt" value="http://www.youtube.com" onclick="getWeb(this.id);"></div>
+          <div id="gPlus" value="http://plus.google.com" onclick="getWeb(this.id);"></div>
         </div>
       </div>
     </footer>
@@ -129,6 +143,7 @@
   <script type="text/javascript">
     //google maps function
   function btmMap() {
+    // Creates map based on my parameters
     var mapProp = { 
       center:new google.maps.LatLng(40.890141,-73.855152),
       zoom: 17,
@@ -136,7 +151,22 @@
     var map =new google.maps.Map(document.getElementById("map"),mapProp);
     }
   </script>
+  <!-- Calling map -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHKysy67fniqtOPr5vyXrOVaWuvUTZZmU&callback=btmMap">
   </script>
+  <!-- Modal Function -->
+  <script type="text/javascript">
+var modal = document.getElementById("modalBgs")
+
+function openModal() {
+  modal.style.display = "block";
+}
+function closeModal() {
+  modal.style.display = "none"
+}
+</script>
+<script src="../js/getweb.js"></script>
 </body>
 </html>
+
+<!-- <img src="../imgs/addicon.png" style="height: 15px; width: 15px;"></img> -->

@@ -3,6 +3,7 @@
 <head>
   <link rel="stylesheet" type="text/css" href="../css/main.css">
   <link rel="stylesheet" type="text/css" href="../css/profile.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <title>profile</title>
 </head>
 <body>
@@ -24,16 +25,28 @@
       </header>
     </div>
   </div>
-  <!-- Content -->
+  <!-- Conent -->
   <div class="pageWrap">
     <div class="leftSide">
       <div id="gallery">
-        <div class="sSWrap">
-          <div class="slideShow">
-            <img class="mySlides" src="../imgs/rx7/front.jpeg">
-            <img class="mySlides" src="../imgs/rx7/engine.jpg">
-            <img class="mySlides" src="../imgs/rx7/interior.jpg">
-            <img class="mySlides" src="../imgs/rx7/side.jpg">
+        <div class="w3-content" style="max-width: 1200px">
+          <img class="slides" src="../imgs/rx7/front.jpeg" style="width: 100%">
+          <img class="slides" src="../imgs/rx7/engine.jpg" style="width: 100%">
+          <img class="slides" src="../imgs/rx7/side.jpg" style="width: 100%">
+          <img class="slides" src="../imgs/rx7/interior.jpg" style="width: 100%">
+          <div class="w3-row-padding w3-section">
+            <div class="w3-col s3">
+              <img class="demo w3-opacity w3-hover-opacity-off" src="../imgs/rx7/front.jpeg" style="width:100%" onclick="currentDiv(1)">
+            </div>
+          <div class="w3-col s3">
+            <img class="demo w3-opacity w3-hover-opacity-off" src="../imgs/rx7/engine.jpg" style="width:100%" onclick="currentDiv(2)">
+          </div>
+          <div class="w3-col s3">
+            <img class="demo w3-opacity w3-hover-opacity-off" src="../imgs/rx7/side.jpg" style="width:100%" onclick="currentDiv(3)">
+          </div>
+          <div class="w3-col s3">
+            <img class="demo w3-opacity w3-hover-opacity-off" src="../imgs/rx7/interior.jpg" style="width:100%" onclick="currentDiv(4)">
+          </div>
           </div>
         </div>
       </div> 
@@ -122,11 +135,11 @@
           <div id="logo"></div>
         </div>
         <div class="smWrap">
-          <div id="fb" value="http://www.facebook.com" onclick="getWeb(this.id);"></div>
-          <div id="tw" value="http://www.twitter.com" onclick="getWeb(this.id);"></div>
-          <div id="ig" value="http://www.instagram.com" onclick="getWeb(this.id);"></div>
-          <div id="yt" value="http://www.youtube.com" onclick="getWeb(this.id);"></div>
-          <div id="gPlus" value="http://plus.google.com" onclick="getWeb(this.id);"></div>
+          <div id="fb"></div>
+          <div id="tw"></div>
+          <div id="ig"></div>
+          <div id="yt"></div>
+          <div id="gPlus"></div>
         </div>
       </div>
     </footer>
@@ -160,24 +173,5 @@ function showDivs(n) {
   dots[slideIndex-1].className += " w3-opacity-off";
 }
 </script>
-<script type="text/javascript">
-  var myIndex = 0;
-  carousel();
-
-  function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for(i =0; i < x.length; i+=1) {
-      x[i].style.display = "none"
-    }
-    myIndex +=1
-    if(myIndex > x.length) {
-      myIndex = 1
-    }
-    x[myIndex-1].style.display = "block"
-    setTimeout(carousel, 3000);
-  }
-  </script>
-  <script src="../js/getweb.js"></script>
 </body>
 </html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/flipindex.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <title>Homepage</title>
+</head>
+<body>
+<!--   Slide Show-->  
+  <div class="sSWrap">
+    <!-- Header -->
+    <div class="headWrap">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pages/about.html">About</a></li>
+          <li><a href="pages/faq.html">F.A.Q.</a></li>
+          <li><a href="pages/inventory.html">Inventory</a></li>
+          <li><a href="pages/profile.html">Profile</a></li>
+          <li><a href="pages/merch.html">Merch</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+    <!-- SS Start -->
+    <div class="sS">
+      <img class="miSlides" src="imgs/supra.jpeg" style="width: 100%">
+      <img class="miSlides" src="imgs/si400.jpg" style="width: 100%">
+      <img class="miSlides" src="imgs/skyline400.jpeg" style="width: 100%">
+      <img class="miSlides" src="imgs/s2k400.jpg" style="width: 100%">
+      <img class="miSlides" src="imgs/rears400.jpg" style="width: 100%">
+      <button class="lBtn" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="rBtn" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+  </div>
+<!-- body content -->
+  <div class="content">
+    <div class="gWrap">
+      <div class="gBlockOne"> <!-- horizontal -->
+          <div id="tOne">
+            <div id="one"></div>
+            <div id="two"></div>
+          </div>
+          <div id="bOne">
+            <div id="three"></div>
+          </div>
+      </div>
+      <div class="gBlockTwo"> <!-- vertical -->
+        <div id="four">
+            <div class="flip">
+              <div class="front"></div>
+              <div class="back"></div>
+            </div>
+        </div>
+      </div>
+      <div class="gBlockOne">
+        <div id="tOne">
+          <div id="six"></div>
+          <div id="seven"></div>
+        </div>
+        <div id="bOne">
+          <div id="five"></div>
+        </div>
+    </div>
+      <div id="bThree">
+        <div id="eight">
+          <div class="sold" id="sOne"></div>
+          <div class="sold" id="sTwo"></div>
+          <div class="sold" id="sThree"></div>
+          <div class="sold" id="sFour"></div>
+        </div>
+      </div>
+  </div>
+<!-- Footer -->
+  <div class="footer">
+    <footer>
+      <div class="footWrap">
+        <div class="logoWrap">
+          <div id="logo"></div>
+        </div>
+        <div class="smWrap">
+          <div id="fb"></div>
+          <div id="tw"></div>
+          <div id="ig"></div>
+          <div id="yt"></div>
+          <div id="gPlus"></div>
+        </div>
+      </div>
+    </footer>
+  </div>
+<script src="js/index.js"></script>
+</body>
+</html>

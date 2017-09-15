@@ -1,7 +1,6 @@
 .head{
   background-image: url(../imgs/bandb.jpeg);
 }
-
 .detailWrap {
   flex: 1; /*relates to body*/
 }
@@ -12,17 +11,21 @@
 .fullDetail {
   display: flex;
   border: 2px solid black;
-  border-radius: 4px;
-  margin: 10px;
+  border-radius: 8px;
+  margin: 20px;
+  box-shadow: 10px 10px 5px #888888;
+}
+.fullDetail:active {
+  transform: translateY(5px);
 }
 .img, .price {
   flex: 1;
   min-height: 200px;
 }
 .img {
-  background-image: url(../imgs/rx7/front.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 0 60%;
   margin: 5px;
 }
 .info {
@@ -31,4 +34,14 @@
   overflow-y: scroll;
 }
 .price {
+}
+#detOne .img {
+  background-image: url(../imgs/rx7/front.jpeg);
+}
+#detTwo .img {
+  background-image: url(../imgs/supra/suprafront.jpeg);
+
+}
+#detThree .img {
+  background-image: url(../imgs/r32/side.jpg);
 }
